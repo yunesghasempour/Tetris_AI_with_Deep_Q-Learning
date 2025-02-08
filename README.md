@@ -1,54 +1,16 @@
-# Tetris AI with Deep Q-Learning (DQN)
+# Tetris AI with DQN (Deep Q-Learning)
 
-This project implements a Tetris AI using Deep Q-Networks (DQN). MI
+This is a simple implementation of a Tetris game with a reinforcement learning agent using Deep Q-Learning (DQN). The agent learns how to play Tetris by interacting with the environment and optimizing its actions based on rewards.
 
-## Features
+## Project Description
 
-- Implements a **5x10** Tetris grid with **1x1** blocks.
-- Uses **Deep Q-Learning (DQN)** for decision-making.
-- Standard Tetris scoring system.
-- The trained model can be saved and loaded for further use.
-- Supports visualization of gameplay.
+This project involves training a Deep Q-Network (DQN) to play the Tetris game. The game environment is simulated using `pygame`, and the neural network model is built with PyTorch. The agent learns to make decisions such as moving left, right, rotating, and dropping pieces to clear lines and gain points.
 
-## Installation
+### Key Features:
+- **Tetris Game Environment**: Implemented using `pygame` for visual rendering.
+- **Deep Q-Learning Agent**: The agent uses a convolutional neural network (CNN) to predict Q-values for each action.
+- **Rewards and Training**: The agent is rewarded for clearing lines and punished when the game is over.
 
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Game
-
-```bash
-python main.py
-```
-
-## Training the AI
-
-To train the AI using DQN, run:
-
-```bash
-python train.py
-```
-
-## Saving and Loading the Model
-
-The trained model is automatically saved as `tetris_model.pth`. To load the model and run the AI:
-
-```bash
-python play.py --load-model tetris_model.pth
-```
-
-## Project Structure
-
-|-- play.py           # Running AI script
-|-- README.md         # Project documentation
-```
-
-## Contributing
-
-Feel free to open an issue or submit a pull request if you want to improve the project!
-
-## License
-
-MIT License
-
+### Prerequisites:
+- Python 3.10
+- pip (Python package installer)
