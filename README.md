@@ -40,13 +40,7 @@ python play.py --load-model tetris_model.pth
 
 ## Project Structure
 
-```
-|-- tetris.py         # Tetris game logic
-|-- dqn.py            # Deep Q-Network implementation
-|-- train.py          # Training script
 |-- play.py           # Running AI script
-|-- utils.py          # Helper functions
-|-- requirements.txt  # Dependencies
 |-- README.md         # Project documentation
 ```
 
